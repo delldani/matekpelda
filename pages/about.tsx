@@ -1,12 +1,15 @@
 import type { NextPage } from "next";
 import { Layout} from '../components/layout'
-import styles from "../styles/Home.module.css";
+import Link from 'next/link'
 
 const About: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div >
      
     About Page !
+    <Link href="/">
+          <a>Home page</a>
+        </Link>
     </div>
   );
 };

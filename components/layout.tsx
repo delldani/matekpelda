@@ -10,7 +10,7 @@ export const Layout: NextPage<Props> = ({children}) => {
 const [ counter,setCounter] = React.useState(0);
     return (
     <div >
-        <button onClick={()=>setCounter(counter+1)}>counter</button>
+        <button onClick={()=>setCounter(counter+1)}>counter</button>{counter}
 {children}
     </div>
   );
